@@ -37,7 +37,7 @@ public class BaseClass {
 	//@BeforeTest  //(cross browser testing)
 	@BeforeClass(groups = {"smoke","regression"})
 	public void  bcconfig() throws Throwable {
-        //String BROWSER = System.getProperty("browser");  // read browser valvue from commandline 
+        //String BROWSER = System.getProperty("browser");  // read browser valvue from commandline and for jenkins also we have to use dis line
 	// String URL = System.getProperty("url"); //read the data at run time in jenkins
 		String BROWSER = futil.getDataFromProperty("browser"); //read browser value from Property file
 		String URL=futil.getDataFromProperty("url");

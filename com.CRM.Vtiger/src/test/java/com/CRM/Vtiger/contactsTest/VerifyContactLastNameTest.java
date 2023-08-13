@@ -63,6 +63,7 @@ public class VerifyContactLastNameTest extends BaseClass {
 		
 		Assert.assertTrue( ExpectedLastName.contains(ActualLastName));
 		System.out.println("Pass"); 
+		System.out.println("end");
 		
 	}
 
