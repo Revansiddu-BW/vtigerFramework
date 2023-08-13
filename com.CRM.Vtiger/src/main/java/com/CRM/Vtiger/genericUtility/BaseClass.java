@@ -37,10 +37,10 @@ public class BaseClass {
 	//@BeforeTest  //(cross browser testing)
 	@BeforeClass(groups = {"smoke","regression"})
 	public void  bcconfig() throws Throwable {
-        String BROWSER = System.getProperty("browser");  // read browser valvue from commandline 
-	 String URL = System.getProperty("url"); //read the data at run time in jenkins
-		//String BROWSER = futil.getDataFromProperty("browser"); //read browser value from Property file
-		//String URL=futil.getDataFromProperty("url");
+        //String BROWSER = System.getProperty("browser");  // read browser valvue from commandline 
+	// String URL = System.getProperty("url"); //read the data at run time in jenkins
+		String BROWSER = futil.getDataFromProperty("browser"); //read browser value from Property file
+		String URL=futil.getDataFromProperty("url");
 		
 		//run time polymorphisam
 		if(BROWSER.equalsIgnoreCase("chrome")) {
